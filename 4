@@ -1,0 +1,12 @@
+balance=int(input("잔액:"))
+
+while balance>0:
+    print("1.입금 2.출금 3.송금")
+    select=int(input("번호:"))
+    money=int(input("금액"))
+    if select==1:
+        balance=balance+money
+    else:
+        balance=balance-money
+        print("잔액:",balance)
+print("잔액이 부족합니다")
